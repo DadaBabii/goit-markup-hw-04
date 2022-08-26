@@ -130,26 +130,7 @@ a {
     color: var(--secondary-text-color);
 }
 
-.email-icon{
-    
-    color: var(--light-text-color);
-    width: 16px;
-    height: 12px;
 
-
-
-
-}
-
-.smartphone-icon {
-
-    color: var(--light-text-color);
-    width: 10px;
-    height: 16px;
-        
-        
-
-}
 
 .link {
     display: inline-block;
@@ -158,6 +139,7 @@ a {
 .social-links {
     display: flex;
     margin-left: auto;
+    align-items: center;
     
 }
 
@@ -182,6 +164,29 @@ a {
 .social-links .link:hover,
 .social-links .link:focus {
     color: var(--secondary-text-color);
+}
+
+.link-icon {
+
+    margin-right: 10px;
+    fill: var(--light-text-color);
+
+}
+
+.link:hover .link-icon,
+.link:hover .link-icon {
+
+    fill: var(--secondary-text-color);
+
+}
+
+
+.smartphone-icon {
+
+    color: var(--light-text-color);
+    width: 10px;
+    height: 16px;
+
 }
 
 
@@ -379,12 +384,12 @@ a {
 
 .card-content {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
 
-    background-color: var(--main-light-colorgalery-text);
+    background-color: var(--main-light-color);
 }
 
 .card {
@@ -410,6 +415,90 @@ a {
     color: var(--light-text-color);
     font-size: 16px;
     line-height: 1.19;
+
+}
+
+.social-list {
+    background-color: var(--main-light-color);
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--main-light-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--secondary-text-color);
+   
+}
+
+.social-list-icon {
+    fill: #AFB1B8;
+
+}
+
+.social-list-icon:hover,
+.social-list-icon:focus {
+    fill: var(--main-light-color);
+}
+
+/* Постійні клієнти */
+
+.clients-section {
+    padding-top: var(--padding94);
+    padding-bottom: var(--padding94);
+}
+
+.clients-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 0;
+
+}
+
+.clients-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: var(--main-light-color);
+}
+
+.clients-list-icon {
+    fill: #AFB1B8;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border-color: var(--secondary-text-color);
+}
+
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+    fill: var(--secondary-text-color);
 }
 
 /* footer */
@@ -477,8 +566,72 @@ a {
 }
 
 .contact-item:not(:last-child) {
-margin-bottom: 9px;
+    margin-bottom: 9px;
 }
+
+.container-footer {
+    display: flex;
+    
+}
+
+.container-foter-adress {
+    
+    width: 231px;
+    
+}
+
+
+.container-footer-socials {
+    margin-left: 70px;
+    width: 206px;
+    
+    
+   
+}
+
+.social-header {
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:  var(--main-light-color);
+}
+
+.social-list-footer {
+    
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    
+}
+
+.social-list-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+    background-color: var(--secondary-text-color);
+
+}
+
+.social-list-icon-footer {
+    fill: var(--main-light-color)
+
+}
+
+
+
 
 /* власне портфоліо */
 
