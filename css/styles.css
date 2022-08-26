@@ -130,6 +130,27 @@ a {
     color: var(--secondary-text-color);
 }
 
+.email-icon{
+    
+    color: var(--light-text-color);
+    width: 16px;
+    height: 12px;
+
+
+
+
+}
+
+.smartphone-icon {
+
+    color: var(--light-text-color);
+    width: 10px;
+    height: 16px;
+        
+        
+
+}
+
 .link {
     display: inline-block;
 }
@@ -169,9 +190,16 @@ a {
 .advertis-section {
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 
-    
-    background-color: var(--dark-bcg-color);
+    max-width: 1600px;
+    height: 600px;
+    background-color: #C4C4C4;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herophoto.jpg);
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
 
@@ -254,6 +282,18 @@ a {
     margin-left: 30px;
     
 }
+
+.grey-box {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: var(--light-bcg-color);
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 .benefit-header {
     margin-bottom: 10px;
 
@@ -532,6 +572,10 @@ margin-bottom: 9px;
     margin-top: var(--margin30);
 
     
+}
+
+.galery-list>.item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .galery-text {
