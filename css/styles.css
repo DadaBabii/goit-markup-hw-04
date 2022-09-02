@@ -149,6 +149,8 @@ a {
 }
 
 .social-links .link {
+    display: flex;
+    text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -231,7 +233,9 @@ a {
 
 .button  {
     border-radius: 4px;
-    padding: 10px 34px;
+    width: 216px;
+    height: 50px;
+    padding: 10px;
     font-family: inherit;
     cursor: pointer;
     font-weight: 700;
@@ -434,23 +438,15 @@ a {
     height: 44px;
     border-radius: 50%;
     background-color: var(--main-light-color);
+    fill: #AFB1B8;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--secondary-text-color);
-   
-}
-
-.social-list-icon {
-    fill: #AFB1B8;
-
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
     fill: var(--main-light-color);
 }
+
 
 /* Постійні клієнти */
 
@@ -471,7 +467,7 @@ a {
     display: flex;
     justify-content: center;
     column-gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
     padding-bottom: 0;
 
 }
@@ -485,21 +481,18 @@ a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     background-color: var(--main-light-color);
-}
-
-.clients-list-icon {
     fill: #AFB1B8;
 }
+
+
 
 .clients-list-link:hover,
 .clients-list-link:focus {
     border-color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
+    
 }
 
-.clients-list-link:hover .clients-list-icon,
-.clients-list-link:focus .clients-list-icon {
-    fill: var(--secondary-text-color);
-}
 
 /* footer */
 
@@ -571,7 +564,7 @@ a {
 
 .container-footer {
     display: flex;
-    
+    align-items: baseline;
 }
 
 .container-foter-adress {
@@ -590,7 +583,7 @@ a {
 }
 
 .social-header {
-    margin-top: 12px;
+    
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -617,6 +610,7 @@ a {
     height: 44px;
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
+    fill: var(--main-light-color)
 }
 
 .social-list-link-footer:hover,
@@ -625,10 +619,6 @@ a {
 
 }
 
-.social-list-icon-footer {
-    fill: var(--main-light-color)
-
-}
 
 
 
@@ -727,7 +717,10 @@ a {
     
 }
 
-.galery-list>.item:hover {
+.galery-thumb:hover,
+.galery-thumb:focus {
+
+    display: inline-block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
